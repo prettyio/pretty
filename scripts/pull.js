@@ -5,7 +5,7 @@ function green(text) {
 }
 
 function main() {
-  childProcess.execFile('git', ['pull'], (error, _stdout, _stderr) => {
+  childProcess.execFile('git', ['pull', '--all'], (error, _stdout, _stderr) => {
     if (error) {
       throw error;
     }
@@ -18,7 +18,7 @@ function main() {
     const MINUTE = TIME.getMinutes();
     const SECOND = TIME.getSeconds();
     const formatTime = `${YEAR}-${MONTH}-${DAY} ${HOUR}:${MINUTE}:${SECOND}`;
-    console.log(` ${formatTime} ${green('[INFO]')} Finished: git pull`);
+    console.log(` ${formatTime} ${green('[INFO]')} Finished: git pull -all`);
   });
 }
 
