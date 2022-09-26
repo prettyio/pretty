@@ -1,25 +1,86 @@
 {
     "name": "@prettyio/pretty",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "private": false,
     "scripts": {
-        "build": "ncc build ./src/cmd/pretty/main.ts -o ./dist/",
-        "start": "node ./dist/index.js"
+        "start": "node ./src/cmd/pretty/main.js"
+    },
+    "dependencies": {
+        "@babel/code-frame": "7.16.7",
+        "@babel/parser": "7.18.0",
+        "@glimmer/syntax": "0.84.2",
+        "@iarna/toml": "2.2.5",
+        "@typescript-eslint/typescript-estree": "5.27.0",
+        "acorn": "8.7.0",
+        "acorn-jsx": "5.3.2",
+        "angular-estree-parser": "2.5.1",
+        "angular-html-parser": "1.8.0",
+        "camelcase": "6.3.0",
+        "chalk": "5.0.1",
+        "ci-info": "3.3.0",
+        "cjk-regex": "2.0.1",
+        "cosmiconfig": "7.0.1",
+        "css-units-list": "1.1.0",
+        "dashify": "2.0.0",
+        "diff": "5.0.0",
+        "editorconfig": "0.15.3",
+        "editorconfig-to-prettier": "0.2.0",
+        "escape-string-regexp": "5.0.0",
+        "espree": "9.3.1",
+        "esutils": "2.0.3",
+        "fast-glob": "3.2.11",
+        "fast-json-stable-stringify": "2.1.0",
+        "file-entry-cache": "6.0.1",
+        "find-cache-dir": "3.3.2",
+        "find-parent-dir": "0.3.1",
+        "flow-parser": "0.180.0",
+        "get-stdin": "8.0.0",
+        "graphql": "15.6.1",
+        "html-element-attributes": "3.1.0",
+        "html-styles": "1.0.0",
+        "html-tag-names": "2.0.1",
+        "html-void-elements": "2.0.1",
+        "ignore": "5.2.0",
+        "jest-docblock": "27.5.1",
+        "json5": "2.2.1",
+        "leven": "4.0.0",
+        "lines-and-columns": "2.0.3",
+        "linguist-languages": "7.21.0",
+        "mem": "9.0.2",
+        "meriyah": "4.2.1",
+        "micromatch": "4.0.5",
+        "minimist": "1.2.6",
+        "n-readlines": "1.0.1",
+        "outdent": "0.8.0",
+        "parse-srcset": "ikatyang/parse-srcset#54eb9c1cb21db5c62b4d0e275d7249516df6f0ee",
+        "postcss-less": "3.1.4",
+        "postcss-media-query-parser": "0.2.3",
+        "postcss-scss": "2.1.1",
+        "postcss-selector-parser": "2.2.3",
+        "postcss-values-parser": "2.0.1",
+        "regexp-util": "1.2.2",
+        "remark-footnotes": "2.0.0",
+        "remark-math": "3.0.1",
+        "remark-parse": "8.0.3",
+        "resolve": "1.22.0",
+        "sdbm": "2.0.0",
+        "semver": "7.3.7",
+        "string-width": "5.0.1",
+        "strip-ansi": "^7.0.0",
+        "unicode-regex": "3.0.0",
+        "unified": "9.2.1",
+        "vnopts": "1.0.2",
+        "wcwidth": "1.0.1",
+        "yaml-unist-parser": "1.3.1"
     },
     "devDependencies": {
-        "@vercel/ncc": "^0.34.0",
-        "dtsmake": "^0.0.10",
-        "typescript": "^4.0.0"
+        "@types/node": "^18.0.0",
+        "@vercel/ncc": "^0.34.0"
     },
     "bin": {
         "pretty": "./dist/index.js"
     },
     "files": [
         "./dist"
-    ],
-    "publishConfig": {
-        "access": "public",
-        "registry": "https://registry.npmjs.org/"
-    },
-    "types": "./dist/types/main.d.ts"
+    ]
 }
