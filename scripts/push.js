@@ -18,7 +18,7 @@ function main() {
     const MINUTE = TIME.getMinutes();
     const SECOND = TIME.getSeconds();
     const formatTime = `${YEAR}-${MONTH}-${DAY} ${HOUR}:${MINUTE}:${SECOND}`;
-    console.log(` ${formatTime} ${green('[INFO]')} Finished: git push`);
+    console.log(`  ${formatTime} ${green('[INFO]')} Finished: git push`);
   });
 }
 
