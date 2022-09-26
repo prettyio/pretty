@@ -1,6 +1,6 @@
 {
     "name": "@prettyio/pretty",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "private": false,
     "scripts": {
         "start": "node ./src/cmd/pretty/main.js"
@@ -78,9 +78,10 @@
         "@vercel/ncc": "^0.34.0"
     },
     "bin": {
-        "pretty": "./dist/index.js"
+        "pretty": "./src/cmd/pretty/main.js"
     },
     "files": [
-        "./dist"
-    ]
+        "./src/"
+    ],
+    "homepage": "https://github.com/prettyio/pretty#readme"
 }
